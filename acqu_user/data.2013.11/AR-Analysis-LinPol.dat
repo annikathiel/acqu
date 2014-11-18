@@ -17,27 +17,27 @@ Reconstruct:
 ## edge can be fit|epics
 ## plane can be file|epics: if file - need "runs:" lines below here.
 ## scaler_ref can be overridden by specific run settings in the "runs: lines"
-#			runMin  runMax   norm_energy   edgeMin  edgeMax   tagger ladder   scaler_ref							            buffers   edge	plane  deadband(MeV)
+#			runMin  runMax   norm_energy   edgeMin  edgeMax   tagger data/LadderScalers/Ladder   scaler_ref							            buffers   edge	plane  deadband(MeV)
 #for positive target polarization					
-Misc:	app    322     409            700.00          250.0    400.0          TAGG    FPD     /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/LadderScalers/LadderScalers_347.dat  5        	fit     epics   0.2
-Misc:	app    430     531            700.00          550.0    700.0          TAGG    FPD     /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/LadderScalers/LadderScalers_485.dat  5        	fit     epics   0.2
-Misc:	app    544     581            700.00          650.0    800.0          TAGG    FPD     /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/LadderScalers/LadderScalers_540.dat  5        	fit     epics   0.2
-Misc:	app    612     630            700.00          350.0    500.0          TAGG    FPD     /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/LadderScalers/LadderScalers_590.dat  5        	fit     epics   0.2
-Misc:	app    631     663            700.00          350.0    500.0          TAGG    FPD     /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/LadderScalers/LadderScalers_646.dat  5        	fit     epics   0.2
-Misc:	app    665     730            700.00          450.0    600.0          TAGG    FPD     /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/LadderScalers/LadderScalers_695.dat  5        	fit     epics   0.2
-Misc:	app    731     780            700.00          450.0    600.0          TAGG    FPD     /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/LadderScalers/LadderScalers_744.dat  5        	fit     epics   0.2
-Misc:	app    781     809    	       700.00          450.0    600.0          TAGG    FPD     /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/LadderScalers/LadderScalers_797.dat  5        	fit     epics   0.2
+Misc:	app    322     409  700.00  250.0    400.0  TAGG    FPD     data/LadderScalers/LadderScalers_347.dat  5        	fit     epics   0.2
+Misc:	app    430     531            700.00          550.0    700.0          TAGG    FPD     data/LadderScalers/LadderScalers_485.dat  5        	fit     epics   0.2
+Misc:	app    544     581            700.00          650.0    800.0          TAGG    FPD     data/LadderScalers/LadderScalers_540.dat  5        	fit     epics   0.2
+Misc:	app    612     630            700.00          350.0    500.0          TAGG    FPD     data/LadderScalers/LadderScalers_590.dat  5        	fit     epics   0.2
+Misc:	app    631     663            700.00          350.0    500.0          TAGG    FPD     data/LadderScalers/LadderScalers_646.dat  5        	fit     epics   0.2
+Misc:	app    665     730            700.00          450.0    600.0          TAGG    FPD     data/LadderScalers/LadderScalers_695.dat  5        	fit     epics   0.2
+Misc:	app    731     780            700.00          450.0    600.0          TAGG    FPD     data/LadderScalers/LadderScalers_744.dat  5        	fit     epics   0.2
+Misc:	app    781     809    	       700.00          450.0    600.0          TAGG    FPD     data/LadderScalers/LadderScalers_797.dat  5        	fit     epics   0.2
 #for negative target polarization					
-Misc:	app    860      890           700.00          250.0    400.0          TAGG    FPD     /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/LadderScalers/LadderScalers_906.dat   5         	fit     epics   0.2
-Misc:	app    1006    1050         700.00          550.0    700.0          TAGG    FPD     /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/LadderScalers/LadderScalers_1044.dat 5         	fit     epics   0.2
-Misc:	app    1051    1100         700.00          550.0    700.0          TAGG    FPD     /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/LadderScalers/LadderScalers_1068.dat 5         	fit     epics   0.2
-Misc:	app    1101    1156         700.00          550.0    700.0          TAGG    FPD     /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/LadderScalers/LadderScalers_1116.dat 5         	fit     epics   0.2
-Misc:	app    925      960           700.00          650.0    800.0          TAGG    FPD     /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/LadderScalers/LadderScalers_941.dat   5         	fit     epics   0.2
-Misc:	app    961      998           700.00          650.0    800.0          TAGG    FPD     /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/LadderScalers/LadderScalers_1004.dat 5         	fit     epics   0.2
-Misc:	app    1293    1315         700.00          350.0    500.0          TAGG    FPD     /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/LadderScalers/LadderScalers_1287.dat 5         	fit     epics   0.2
-Misc:	app    1316    1348         700.00          350.0    500.0          TAGG    FPD     /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/LadderScalers/LadderScalers_1322.dat 5         	fit     epics   0.2
-Misc:	app    1187    1220         700.00          450.0    600.0          TAGG    FPD     /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/LadderScalers/LadderScalers_1179.dat 5         	fit     epics   0.2
-Misc:	app    1221    1285         700.00          450.0    600.0          TAGG    FPD     /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/LadderScalers/LadderScalers_1234.dat 5         	fit     epics   0.2
+Misc:	app    860      890           700.00          250.0    400.0          TAGG    FPD     data/LadderScalers/LadderScalers_906.dat   5         	fit     epics   0.2
+Misc:	app    1006    1050         700.00          550.0    700.0          TAGG    FPD     data/LadderScalers/LadderScalers_1044.dat 5         	fit     epics   0.2
+Misc:	app    1051    1100         700.00          550.0    700.0          TAGG    FPD     data/LadderScalers/LadderScalers_1068.dat 5         	fit     epics   0.2
+Misc:	app    1101    1156         700.00          550.0    700.0          TAGG    FPD     data/LadderScalers/LadderScalers_1116.dat 5         	fit     epics   0.2
+Misc:	app    925      960           700.00          650.0    800.0          TAGG    FPD     data/LadderScalers/LadderScalers_941.dat   5         	fit     epics   0.2
+Misc:	app    961      998           700.00          650.0    800.0          TAGG    FPD     data/LadderScalers/LadderScalers_1004.dat 5         	fit     epics   0.2
+Misc:	app    1293    1315         700.00          350.0    500.0          TAGG    FPD     data/LadderScalers/LadderScalers_1287.dat 5         	fit     epics   0.2
+Misc:	app    1316    1348         700.00          350.0    500.0          TAGG    FPD     data/LadderScalers/LadderScalers_1322.dat 5         	fit     epics   0.2
+Misc:	app    1187    1220         700.00          450.0    600.0          TAGG    FPD     data/LadderScalers/LadderScalers_1179.dat 5         	fit     epics   0.2
+Misc:	app    1221    1285         700.00          450.0    600.0          TAGG    FPD     data/LadderScalers/LadderScalers_1234.dat 5         	fit     epics   0.2
 #	
 #
 #
@@ -46,25 +46,25 @@ Misc:	app    1221    1285         700.00          450.0    600.0          TAGG  
 #Will use plane info if "plane" is set to "file" in "Misc: app" above
 #Misc: runs     runMin  runMax          scaler_ref                                      		                                                                           plane(para|perp|amo)  edge_setting  edge_range(+-meV)
 #for positive target polarization
-Misc:   runs    322     409            /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/LadderScalers/LadderScalers_347.dat         	perp                  350.0        30.0
-Misc:   runs    430     531            /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/LadderScalers/LadderScalers_485.dat         	perp                  650.0        30.0
-Misc:   runs    544     581            /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/LadderScalers/LadderScalers_540.dat         	perp                  750.0        30.0
-Misc:   runs    612     630            /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/LadderScalers/LadderScalers_590.dat         	perp                  450.0        30.0
-Misc:   runs    631     663            /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/LadderScalers/LadderScalers_646.dat         	perp                  450.0        30.0
-Misc:   runs    665     730            /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/LadderScalers/LadderScalers_695.dat         	perp                  550.0        30.0
-Misc:   runs    731     780            /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/LadderScalers/LadderScalers_744.dat         	perp                  550.0        30.0
-Misc:   runs    781     809    	   /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/LadderScalers/LadderScalers_797.dat  	 	perp        	 550.0        30.0
+Misc:   runs    322     409            data/LadderScalers/LadderScalers_347.dat         	perp                  350.0        30.0
+Misc:   runs    430     531            data/LadderScalers/LadderScalers_485.dat         	perp                  650.0        30.0
+Misc:   runs    544     581            data/LadderScalers/LadderScalers_540.dat         	perp                  750.0        30.0
+Misc:   runs    612     630            data/LadderScalers/LadderScalers_590.dat         	perp                  450.0        30.0
+Misc:   runs    631     663            data/LadderScalers/LadderScalers_646.dat         	perp                  450.0        30.0
+Misc:   runs    665     730            data/LadderScalers/LadderScalers_695.dat         	perp                  550.0        30.0
+Misc:   runs    731     780            data/LadderScalers/LadderScalers_744.dat         	perp                  550.0        30.0
+Misc:   runs    781     809    	   data/LadderScalers/LadderScalers_797.dat  	 	perp        	 550.0        30.0
 #for negative target polarization
-Misc:   runs    860      890           /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/LadderScalers/LadderScalers_906.dat           	perp                  350.0        30.0
-Misc:   runs    1006    1050         /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/LadderScalers/LadderScalers_1044.dat         	perp                  650.0        30.0
-Misc:   runs    1051    1100         /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/LadderScalers/LadderScalers_1068.dat         	perp                  650.0        30.0
-Misc:   runs    1101    1156         /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/LadderScalers/LadderScalers_1116.dat         	perp                  650.0        30.0
-Misc:   runs    925      960           /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/LadderScalers/LadderScalers_941.dat           	perp                  750.0        30.0
-Misc:   runs    961      998           /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/LadderScalers/LadderScalers_1004.dat         	perp                  750.0        30.0
-Misc:   runs    1293    1315         /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/LadderScalers/LadderScalers_1287.dat         	perp                  450.0        30.0
-Misc:   runs    1316    1348         /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/LadderScalers/LadderScalers_1322.dat         	perp                  450.0        30.0
-Misc:   runs    1187    1220         /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/LadderScalers/LadderScalers_1179.dat         	perp                  550.0        30.0
-Misc:   runs    1221    1285         /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/LadderScalers/LadderScalers_1234.dat        	perp                  550.0        30.0
+Misc:   runs    860      890           data/LadderScalers/LadderScalers_906.dat           	perp                  350.0        30.0
+Misc:   runs    1006    1050         data/LadderScalers/LadderScalers_1044.dat         	perp                  650.0        30.0
+Misc:   runs    1051    1100         data/LadderScalers/LadderScalers_1068.dat         	perp                  650.0        30.0
+Misc:   runs    1101    1156         data/LadderScalers/LadderScalers_1116.dat         	perp                  650.0        30.0
+Misc:   runs    925      960           data/LadderScalers/LadderScalers_941.dat           	perp                  750.0        30.0
+Misc:   runs    961      998           data/LadderScalers/LadderScalers_1004.dat         	perp                  750.0        30.0
+Misc:   runs    1293    1315         data/LadderScalers/LadderScalers_1287.dat         	perp                  450.0        30.0
+Misc:   runs    1316    1348         data/LadderScalers/LadderScalers_1322.dat         	perp                  450.0        30.0
+Misc:   runs    1187    1220         data/LadderScalers/LadderScalers_1179.dat         	perp                  550.0        30.0
+Misc:   runs    1221    1285         data/LadderScalers/LadderScalers_1234.dat        	perp                  550.0        30.0
 #
 #
 # The "pvnames" and "rads" are required if "edge" or "plane" are set to epics in the  "Misc:	app"

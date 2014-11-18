@@ -47,16 +47,16 @@ MultiADC: 1 10000 10100
 #
 ## Stuff to monitor time dependence of counting rates and the hit pattern
 ## coming from the trigger box....the parameter is the setup file name
-RateMonitor: /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/AR-Analysis-TriggerRate.dat
-BitPattern:  /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/AR-Analysis-TriggerPat.dat
+RateMonitor: data/AR-Analysis-TriggerRate.dat
+BitPattern:  data/AR-Analysis-TriggerPat.dat
 ##
 ## Apparatus setup....
 ## Raw analysis may be performed without Apparati
 ##                  Name      Class                    	Setup file
-Apparatus:	    TAGG     TA2Tagger		       	/disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/AR-Analysis-Tagger.dat
-Apparatus:          LinPol     TA2LinearPolEpics         /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/AR-Analysis-LinPol.dat
-Apparatus:	    CB	  TA2CentralApparatus   	/disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/AR-Analysis-CB.dat
-Apparatus:          TAPS      TA2Taps                   /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/AR-Analysis-TAPS.dat
+Apparatus:	    TAGG     TA2Tagger		       	data/AR-Analysis-Tagger.dat
+Apparatus:          LinPol     TA2LinearPolEpics         data/AR-Analysis-LinPol.dat
+Apparatus:	    CB	  TA2CentralApparatus   	data/AR-Analysis-CB.dat
+Apparatus:          TAPS      TA2Taps                   data/AR-Analysis-TAPS.dat
 ##
 ## Turn on apparatus-level reconstruction
 Reconstruct-Analysis:
@@ -64,8 +64,8 @@ Reconstruct-Analysis:
 ## Specify physics analysis
 ##                  Name      Class                    	Config File
 #Physics-Analysis:   Phys      TA2PhysicsPMartel	PhysicsPMartel.dat
-#Physics-Analysis:	CaLib	TA2MyCaLib	       	/disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/AR-MyCaLib.dat
-Physics-Analysis:	GoAT	TA2GoAT			/disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/AR-Analysis-GoAT.dat
+#Physics-Analysis:	CaLib	TA2MyCaLib	       	AR-MyCaLib.dat
+Physics-Analysis:	GoAT	TA2GoAT			data/AR-Analysis-GoAT.dat
 ##
 ## Do some post initialisation...usually necessary
 Initialise:
@@ -74,17 +74,17 @@ Initialise:
 ## The procedures are usually held in macro script files
 ## Period...every N events
 ##        N         Macro File          Macro Procedure
-Period:	  100000    /disk/user/afzal/Mainz/acqu/acqu_user/root/macros/PeriodMacro.C	PeriodMacro()
+Period:	  100000    root/macros/PeriodMacro.C	PeriodMacro()
 #Epics:	  EpicsHistograms.C		DumpEpicsBuffers("EpicsDump.txt")
 ##
 ## EndFile...each time an input data file is closed
 ##                  Macro File          Macro Procedure
-#EndFile:	    /disk/user/afzal/Mainz/acqu/acqu_user/root/macros/EndFileMacro.C	EndFileMacro()
+#EndFile:	    ../root/macros/EndFileMacro.C	EndFileMacro()
 
 ##
 ## Finish...when all input data files processed
 ##                  Macro File          Macro Procedure
-Finish:		    /disk/user/afzal/Mainz/acqu/acqu_user/root/macros/FinishBatch.C	FinishBatch()
+Finish:		    root/macros/FinishBatch.C	FinishBatch()
 ##
 ## Save all accepted events (ie those which pass all data cuts) to a
 ## ROOT file. Data saved in RAW format (ie ADC indices and values)

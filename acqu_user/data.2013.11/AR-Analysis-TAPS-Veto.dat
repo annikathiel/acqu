@@ -20,7 +20,7 @@ Size:   384     1       1       1
 ## Use bit pattern, uncomment if desired
 ########################################################################
 ##
-#BitPattern: /disk/user/afzal/Mainz/acqu/acqu_user/data/TAPS/TAPS.pat
+#BitPattern: ../data/TAPS/TAPS.pat
 ##
 ########################################################################
 ## Calibration factors for each crystal...one line for each crystal

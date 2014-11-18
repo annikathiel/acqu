@@ -28,7 +28,7 @@ Use-CaLib-Veto:     1       1       0
 
 
 #Use-CaLib-CBEnergyPerRun: 	data/CBEnergyCorrectionPerRun.txt
-RootTree-Output-Folder:         /hiskp2/afzal/Mainz/datatrees_test2/
+RootTree-Output-Folder:         data/output/
 RootTree-File-Name:		Acqu
 
 # Read in and decode beam helicity ADC

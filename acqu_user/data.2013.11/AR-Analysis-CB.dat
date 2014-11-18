@@ -15,8 +15,8 @@
 ##
 ## Specify list of detectors which constitute the Crystal Ball apparatus
 ##	  Name       Class Name		Setup file
-Detector: NaI        TA2CalArray	/disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/AR-Analysis-CB-NaI.dat
-Detector: PID        TA2PlasticPID      /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/AR-Analysis-CB-PID.dat
+Detector: NaI        TA2CalArray	data/AR-Analysis-CB-NaI.dat
+Detector: PID        TA2PlasticPID      data/AR-Analysis-CB-PID.dat
 #Detector: MWPC       TA2CylMWPC	data/CB/CB_MWPC.dat
 #
 ## Data reconstruction method for Crystal Ball 

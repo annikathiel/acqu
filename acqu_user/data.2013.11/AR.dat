@@ -26,7 +26,7 @@
 ## NB with TAPS the number of ADCs = 29001
 ##
 ## Batch mode operation...redirect output directory for log files etc.
-BatchDir: /hiskp2/afzal/Mainz/
+BatchDir: data/log/
 ##
 ##        Tree Name     	# branches	Process Type
 Name:     RawEvent_AR_Save	3		Raw
@@ -39,7 +39,7 @@ Branch:	  Mk1_Header            120000
 ##
 ## Directory to save any created ROOT files (include final / )
 
-Directory: /hiskp2/afzal/Mainz/datatrees_test2/
+Directory: data/output/
 
 ##
 ## Manual setup of ADC, Scaler, bits-in-ADC numbers## Usually needed only where experiment header information is not given
@@ -61,7 +61,7 @@ Directory: /hiskp2/afzal/Mainz/datatrees_test2/
 Analysis: TA2UserAnalysis
 ##
 ## Analysis setup file
-AnalysisSetup: /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/AR-Analysis.dat
+AnalysisSetup: data/AR-Analysis.dat
 ##
 ## Specify non-clearing scalers
 #ScalerNoClear: 12 139
@@ -75,8 +75,6 @@ AnalysisSetup: /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/AR-Analysis.da
 ##
 ## Online running...setup of data server
 ## This is ignored for offline running and may be left in
-#ServerSetup: data/calib_stuff/CBTaggTAPSServer.Offline
-ServerSetup: /disk/user/afzal/Mainz/acqu/acqu_user/temp/AR-Server.dat
-#ServerSetup: /disk/user/afzal/Mainz/acqu/acqu_user/data.2013.11/AR-Server.dat
+ServerSetup: data/AR-Server.dat
 
 
